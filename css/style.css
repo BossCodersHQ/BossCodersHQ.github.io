@@ -864,3 +864,8 @@ body:after {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+
+
+.github {
+  margin-bottom: 10px;
+}

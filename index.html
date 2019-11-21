@@ -66,7 +66,7 @@
 
             <nav class="site-navigation position-relative" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#Projects-section" class="nav-link">Projects</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <!-- <li><a href="#clients-section" class="nav-link">Client</a></li> -->
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
@@ -93,7 +93,8 @@
               <div class="col-lg-6">
                 <h1 class="text-black">I'm Kelvin Nyakundi</h1>
                 <p class="lead">Software Engineer</p>
-                <p><a href="#Projects-section" class="btn smoothscroll btn-primary">Projects</a></p>
+                <p><a href="#projects" class="btn smoothscroll btn-primary">Projects</a></p>
+                <p><a href="" class="btn smoothscroll btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Resume</a></p>
 
               </div>
             </div>
@@ -106,16 +107,37 @@
 
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">My Resume</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="cvHolder">
+            <embed src="cv.pdf" frameborder="0" width="100%" height="400px">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="cv.pdf" class="btn btn-primary" target="_blank"download>Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="site-section" id="about-section">
       <div class="container">
         <div class="row ">
           <div class="col-12 mb-4 position-relative">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title ">About Me</h2>
           </div>
           <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
             <div class="bg-light pt-5">
-            <img src="images/face2.png" alt="Image" class="img-fluid">
+              <img src="images/hackathon.jpeg" alt="Image" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-4 order-2 order-lg-1">
@@ -184,250 +206,315 @@ To give a brief introduction to myself, I am currently a 4th year Masters studen
         </div>
       </div>
     </div> -->
-    <section class="site-section block__62272" id="Projects-section">
-
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">-- Ongoing Projects --</h2>
-          </div>
-        </div>
-
-        <div> <!-- Going to be used for overflow on mobile phones-->
-
-          <div class="row"><!-- Fitnesso -->
-            <div class="item col-12 col-md-4">
-              <a href="images/fitnesso/fitnesso.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/fitnesso/fitnesso.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Fitnesso - Detecting Bad form</h4>
-              <h5 class="text-muted">...Using Computer Vision and Machine Learning</h5>
-              <br>
-              <p class="align-middle">Me and a team of developers are currently developing a cross platform mobile application that can detect bad form in videos of a person performing a gym exercise. The goal of this application is to combine computer vision techniques with machine learning models based off of convolutional neural networks to accurately analyse exercises. My team hasn't finished developing this yet but stay in tune for when we do!</p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
-      
-
-          <div id="oxfordhack" class="row"> <!--Autoconfig-->
-            <div class="item col-12 col-md-4">
-              <a href="images/autoconfig/autoconfig.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/autoconfig/autoconfig.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Oxford Hack 2019 - AutoConfig</h4>
-              <p class="align-middle">This was a project developed in a team at <a href="https://oxfordhack.co.uk/" target="_blank">Oxfrod Hack 2019</a>. We developed an Electron cross-platform desktop application that allowed users to quickly set up development environments using a click of a button. The final application used a combination of various new web technologies including React, Redux and Ansible's API. We plan to extend this to a mobile application as well as being able to set up environments using Amazon's Alexa so stay tuned!</p>
-              <a href="https://github.com/kbnyakundi/Autoconfig" target="_blank">GitHub</a><br>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
-          <div id="hackthemidlands" class="row"><!-- Job Application Manager-->
-            <div class="item col-12 col-md-4">
-              <a href="images/jobmanager/jobsearch.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/jobmanager/jobsearch.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Hack the Midlands 2019 - Job Application Manager</h4>
-              <br>
-              <p class="align-middle">This was a project that was developed independently at <a href="https://hackthemidlands.com/" target="_blank">Hack the Midlands 2019</a>. I Started the development of a Web-app Job Application manager that can store the state of a persons job applications and provide informative graphics based on statistics. The idea came to my head since a lot of my fellow final year students lost track of job applications while they were frantically looking for a graduate position xD. When I've finished development I will put the code up on my GitHub so we can all be more organised. Till then sit tight!</p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
-        </div>
-
-
-
-    <section class="site-section block__62272" id="Projects-section">
-
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">-- Completed Projects --</h2>
-          </div>
-        </div>
-
-        <div> <!-- Going to be used for overflow on mobile phones-->
-
-          <div id="virtualchatbot" class="row"> <!-- Virtual Trading Chatbot -->
-            <div class="item col-12 col-md-4">
-              <a href="images/trading/virtual-trading.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/trading/virtual-trading.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Virtual Trading Chatbot</h4>
-              <p class="align-middle">This was a project that was presented in collaboration with Deutsche Bank. It invovled creating a Chatbot using IBM Watson to provide answers to a user's queries on the stock market.</p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
-          <div id="sourcecodeplag" class="row"><!-- SOurce code plagiarism-->
-            <div class="item col-12 col-md-4">
-              <a href="images/sc-plagiarism/gui-front-page.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/sc-plagiarism/gui-front-page.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Source Code Plagiarism Detection</h4>
-              <h5 class="text-muted">...Using Machine Learning</h5>
-              <br>
-              <p class="align-middle">This project involved me independently creating a python software that used machine learning on large sets of data in order to detect source code plagiarism. To do this I utilised neural networks and natural language processing in order to detect 15% more plagiarism cases than commercial software.</p>
-              <a href="https://github.com/kbnyakundi/Machine-Learning-Source-Code-Plagiarism" target="_blank">GitHub</a><br>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
-          <div id="starsclassify" class="row"> <!-- Stars Classifier -->
-            <div class="item col-12 col-md-4">
-              <a href="images/stars-class/stars.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/stars-class/stars.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Stars Classifier</h4>
-              <p class="align-middle">This project came about due to a Kaggle competition that involved create the best classifier for astronomical data. I had to implement machine learning classification algorithms, including random forest classifiers, multi-layer perceptron's and convolutional neural networks. </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
-          <div id="ataribreakout" class="row"> <!-- Atari Breakout -->
-            <div class="item col-12 col-md-4">
-              <a href="images/breakout/start.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/breakout/start.png">
-              </a>
-            </div>
-            <div class="col-12 col-md-8">
-              <h4>Atari Breakout</h4>
-              <p class="align-middle">Implemented a 3D version of the classic Atari Breakout game using only C and OpenGL. This was one of my favourite projects! </p>
-              <a href="https://github.com/kbnyakundi/Atari-breakout-opengl" target="_blank">GitHub</a><br>
-              <a href="">Read More</a>
-            </div>
-          </div>
-
+    <section class="site-section block__62272" id="projects">
+        <div class="container">
           <div class="row">
-            <div class="item col-12 col-md-4">
-              <a href="images/billsplit/billsplit-logo.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/billsplit/billsplit-logo.png">
-              </a>
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title mb-5">Projects</h2>
+            <p>Ah I see you've made your way to the best section! Click on the buttons below too see some of the projects that I have worked on, I'm sure you'll find something thats interesting.</p>
+            <p class="font-italic">- PS if you want to see some of the Hackathon work i've been getting up to recently click on the ongoing projects.</p>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+
+          <div class=""> <!-- add card class to make background grey -->
+            <div class="card-header" id="headingOne" style="background-color: rgba(0,0,0,0);border-bottom: none">
+              <h2 class="text-center mb-1">
+                <button class="btn btn-outline-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  -- Ongoing --
+                </button>
+              </h2>
             </div>
-            <div class="col-12 col-md-8">
-              <h4>Bill Splitter</h4>
-              <p class="align-middle">Implemented an online bill splitter that had the following features:
-                <ol>
-                  <li>Provides support for groups of up to 10 people to split their bills.</li>
-                  <li>Keeps count of how much every person owes and is owned.</li>
-                  <li>Allows groups to see which bills have been paid, when bills are due and notifies them accordingly.</li>
-                </ol>
-              </p>
-              <a href="">Read More</a>
+            <br>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body"> <!-- Going to be used for overflow on mobile phones-->
+
+                <div id="fitnesso" class="row"><!-- Fitnesso -->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/fitnesso/fitnesso.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/fitnesso/fitnesso.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Fitnesso - Detecting Bad form</h4>
+                    <h5 class="text-muted">...Using Computer Vision and Machine Learning</h5>
+                    <br>
+                    <p class="align-middle">Me and a team of developers are currently developing a cross platform mobile application using React Native that can detect bad form in videos of a person performing a gym exercise. The goal of this application is to combine computer vision techniques with machine learning models based off of convolutional neural networks to accurately analyse exercises. My team hasn't finished developing this yet but stay in tune for when we do!</p>
+                  </div>
+                </div>
+
+                <div id="oxfordhack" class="row"> <!--Autoconfig-->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/autoconfig/autoconfig.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/autoconfig/autoconfig.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Oxford Hack 2019 - AutoConfig</h4>
+                    <p class="align-middle">This was a project developed in a team at <a href="https://oxfordhack.co.uk/" target="_blank">Oxfrod Hack 2019</a>. We developed an Electron cross-platform desktop application that allowed users to quickly set up development environments using a click of a button. The final application used a combination of various new web technologies including React, Redux and Ansible's API. We plan to extend this to a mobile application as well as being able to set up environments using Amazon's Alexa so stay tuned!</p>
+                    <a href="https://github.com/kbnyakundi/Autoconfig" target="_blank">GitHub</a><br>
+                  </div>
+                </div>
+
+                <div id="hackthemidlands" class="row"><!-- Job Application Manager-->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/jobmanager/jobsearch.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/jobmanager/jobsearch.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Hack the Midlands 2019 - Job Application Manager</h4>
+                    <br>
+                    <p class="align-middle">This was a project that was developed independently at <a href="https://hackthemidlands.com/" target="_blank">Hack the Midlands 2019</a>. I Started the development of a Web-app Job Application manager that can store the state of a persons job applications and provide informative graphics based on statistics. The idea came to my head since a lot of my fellow final year students lost track of job applications while they were frantically looking for a graduate position xD. When I've finished development I will put the code up on my GitHub so we can all be more organised. Till then sit tight!</p>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
 
-          <div class="row">
-            <div class="item col-12 col-md-4">
-              <a href="images/bank-proto/protobank.png" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="images/bank-proto/protobank.png">
-              </a>
+
+          <div class="">
+            <div class="card-header" id="headingTwo" style="background-color: rgba(0,0,0,0);border-bottom: none">
+              <h2 class="text-center mb-1">
+                <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 -- Completed --
+                </button>
+              </h2>
             </div>
-            <div class="col-12 col-md-8">
-              <h4>ProtoType Banking System</h4>
-              <p class="align-middle">Created a prototype for a simple banking system which allowed for secure authentication and registration including 2-factor authentication and password recovery options. Involved producing a website as the front end and setting up a HTTP server as the backend, both of which were mainly coded using java to allow all operations to be done on the server side for security purposes. </p>
-              <a href="">Read More</a>
+            <br>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              
+              <div> <!-- Going to be used for overflow on mobile phones-->
+
+                <div id="virtualchatbot" class="row"> <!-- Virtual Trading Chatbot -->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/trading/virtual-trading.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/trading/virtual-trading.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Virtual Trading Chatbot - AURORA</h4>
+                    <br>
+                    <h6><b>What was used:</b> IBM Watson, Python, PHP, HTML, Materialize-css, MySQL</h6>
+                    <br>
+                    <p class="align-middle">This was a project that was presented in collaboration with Deutsche Bank. It invovled creating a Chatbot using IBM Watson to provide answers to a user's queries on the stock market.</p>
+
+                    <div class="collapse" id="virtual-more">
+
+                      <p>The key features of this project were:
+                        <ol>
+                          <li>Access and interface with data on the FTSE 100.</li>
+                          <li>Receive and respond to queries from a trader. Queries can be in the form of voice or text commands.</li>
+                          <li>Employ AI so that it exhibits traits consistent with a personalised virtual trading assistant.</li>
+                          <li>Allow user to view news on any of the FTSE 100 without leaving the application.</li>
+                        </ol>
+                      </p>
+
+                      <div class=row>
+                        <div class="item col-md-4">
+                          <a href="images/trading/news.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/trading/news.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-4">
+                          <a href="images/trading/recording.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/trading/recording.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-4">
+                          <a href="images/trading/smallscreen.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/trading/smallscreen.png">
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <a data-toggle="collapse" href="#virtual-more" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-outline-primary">See More</a>
+                  </div>
+                </div>
+
+                <br>
+                <div id="sourcecodeplag" class="row"><!-- SOurce code plagiarism-->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/sc-plagiarism/gui-front-page.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/sc-plagiarism/gui-front-page.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Source Code Plagiarism Detection</h4>
+                    <h5 class="text-muted">...Using Machine Learning</h5>
+                    <br>
+                    <h6><b>What was used:</b> Python, HTML, PHP, CSS, Scikit-learn, TensorFlow</h6>
+                    <br>
+                    <p class="align-middle">This project involved me independently creating a 
+                    Python software that used machine learning on large sets of data in order to detect source code plagiarism in Java files. To do this I utilised neural networks and natural language processing in order to detect 15% more plagiarism cases than commercial software.</p>
+
+                    <a class ="btn btn-outline-secondary github" href="https://github.com/kbnyakundi/Machine-Learning-Source-Code-Plagiarism" target="_blank">GitHub</a><br>
+
+                    <div class="collapse" id="plag-more">
+
+                      This was my 3rd year dissertation project which recieved a First Class. If you would like to see the full (100 page) report you can download it using this <a href="https://drive.google.com/file/d/1DEMfi3aSLcKQ5dagOBIL5fDAb6aV8TsC/view?usp=sharing" target="_blank">link</a>.
+                      <br>
+
+                      <div class=row>
+                        <div class="item col-md-3">
+                          <a href="images/sc-plagiarism/main-page-1.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/sc-plagiarism/main-page-1.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-3">
+                          <a href="images/sc-plagiarism/main-page-2.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/trading/recording.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-3">
+                          <a href="images/sc-plagiarism/main-page-3.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/sc-plagiarism/main-page-3.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-3">
+                          <a href="images/sc-plagiarism/results-page-1.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/sc-plagiarism/results-page-1.png">
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#plag-more" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-outline-primary">See More</a>
+                  </div>
+                </div>
+
+                <br>
+                <div id="starsclassify" class="row"> <!-- Stars Classifier -->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/stars-class/stars.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/stars-class/stars.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Stars Classifier</h4>
+                    <br>
+                    <h6><b>What was used:</b> Python, Scikit-learn, TensorFlow</h6>
+                    <p class="align-middle">This project came about due to a Kaggle competition that involved create the best classifier for astronomical data. I had to implement machine learning classification algorithms, including random forest classifiers, multi-layer perceptron's and convolutional neural networks. </p>
+
+                    <a class="btn btn-outline-secondary" href="https://www.kaggle.com/c/PLAsTiCC-2018" target="_blank">Competition Link</a>
+                  </div>
+                </div>
+
+                <br>
+                <div id="ataribreakout" class="row"> <!-- Atari Breakout -->
+                  <div class="item col-12 col-md-4">
+                    <a href="images/breakout/start.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/breakout/start.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Atari Breakout</h4>
+                    <br>
+                    <h6><b>What was used:</b> C, OpenGl</h6>
+                    <br>
+                    <p class="align-middle">Implemented a 3D version of the classic Atari Breakout game using only C and OpenGL. This was one of my favourite projects! </p>
+
+                    <a class="btn btn-outline-secondary github" href="https://github.com/kbnyakundi/Atari-breakout-opengl" target="_blank" >GitHub</a><br>
+
+                    <div class="collapse" id="atari-more">
+                      <br>
+
+                      <div class=row>
+                        <div class="item col-md-3">
+                          <a href="images/breakout/gameplay.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/breakout/gameplay.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-3">
+                          <a href="images/breakout/gameover.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/breakout/gameover.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-3">
+                          <a href="images/breakout/midrotation.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/breakout/midrotation.png">
+                          </a>
+                        </div>
+                        <div class="item col-md-3">
+                          <a href="images/breakout/start.png" class="item-wrap fancybox">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="images/breakout/instructions.png">
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#atari-more" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-outline-primary">See More</a>
+
+                  </div>
+                </div>
+
+                <br>
+                <div id="billsplit" class="row">
+                  <div class="item col-12 col-md-4">
+                    <a href="images/billsplit/billsplit-logo.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/billsplit/billsplit-logo.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>Bill Splitter</h4>
+                    <p class="align-middle">Implemented an online bill splitter that had the following features:
+                      <ol>
+                        <li>Provides support for groups of up to 10 people to split their bills.</li>
+                        <li>Keeps count of how much every person owes and is owned.</li>
+                        <li>Allows groups to see which bills have been paid, when bills are due and notifies them accordingly.</li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+
+                <br>
+                <div id="protobank" class="row">
+                  <div class="item col-12 col-md-4">
+                    <a href="images/bank-proto/protobank.png" class="item-wrap fancybox">
+                      <span class="icon-search2"></span>
+                      <img class="img-fluid" src="images/bank-proto/protobank.png">
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h4>ProtoType Banking System</h4>
+                    <p class="align-middle">Created a prototype for a simple banking system which allowed for secure authentication and registration including 2-factor authentication and password recovery options. Involved producing a website as the front end and setting up a HTTP server as the backend, both of which were mainly coded using java to allow all operations to be done on the server side for security purposes. </p>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
+
           </div>
-
-
 
         </div>
 
-        <div id="posts" class="row no-gutter">
-
-          <!-- <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/trading/virtual-trading.png" class="item-wrap fancybox">
-              <span class="icon-search2"> Virtual Trading Chatbot</span>
-              <img class="img-fluid" src="images/trading/virtual-trading.png">
-            </a>
-          </div>
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/stars-class/stars.png" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/stars-class/stars.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/breakout/start.png" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/breakout/start.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-
-            <a href="images/sc-plagiarism/gui-front-page.png" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sc-plagiarism/gui-front-page.png">
-            </a>
-
-          </div>
-
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/post_6.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/billsplit.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/bank-proto/protobank.png" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/bank-proto/protobank.png">
-            </a>
-          </div> -->
-
-          <!-- <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/post_3.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/post_3.jpg">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/post_4.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/post_4.jpg">
-            </a>
-          </div>
-
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/post_6.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/post_6.jpg">
-            </a>
-          </div> -->
-
-
-        </div>
       </div>
-
     </section>
 
 
