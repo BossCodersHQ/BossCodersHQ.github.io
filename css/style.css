@@ -869,3 +869,13 @@ body:after {
 .github {
   margin-bottom: 10px;
 }
+
+.glow-effect {
+  display: block;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 20px 1px green;
+}
